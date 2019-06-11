@@ -59,6 +59,18 @@ export default {
           component: './Welcome',
         },
         {
+          path: '/formdemo',
+          name: 'FormDemo',
+          icon: 'smile',
+          component: './formDemo/index',
+        },
+        {
+          path: '/dataflow',
+          name: 'DataFlow',
+          icon: 'smile',
+          component: './dataFlow/index',
+        },
+        {
           path: 'https://github.com/umijs/umi-blocks/tree/master/ant-design-pro',
           name: 'more-blocks',
           icon: 'block',
