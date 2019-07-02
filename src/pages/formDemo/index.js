@@ -51,18 +51,19 @@ class FormDemo extends PureComponent{
         title: '住址',
         dataIndex: 'address',
         key: 'address',
-        sorter: (a, b) => {
-          const stringA = a.address.toUpperCase(); // ignore upper and lowercase
-          const stringB = b.address.toUpperCase(); // ignore upper and lowercase
-          if (stringA < stringB) {
-              return -1;
-          }
-          if (stringA > stringB) {
-              return 1;
-          }
-          // names must be equal
-          return 0;
-        }
+        // sorter: (a, b) => {
+        //   const stringA = a.address.toUpperCase(); // ignore upper and lowercase
+        //   const stringB = b.address.toUpperCase(); // ignore upper and lowercase
+        //   if (stringA < stringB) {
+        //       return -1;
+        //   }
+        //   if (stringA > stringB) {
+        //       return 1;
+        //   }
+        //   // names must be equal
+        //   return 0;
+        // }
+        sorter: (a, b) => a.address.localeCompare(b.address,"zh")
       },
     ];
     return(

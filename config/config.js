@@ -71,6 +71,12 @@ export default {
           component: './dataFlow/index',
         },
         {
+          path: '/handeldata',
+          name: 'HandelData',
+          icon: 'smile',
+          component: './handelData/index',
+        },
+        {
           path: 'https://github.com/umijs/umi-blocks/tree/master/ant-design-pro',
           name: 'more-blocks',
           icon: 'block',
